@@ -32,7 +32,7 @@ const CardAddForm = ({FileInput,onAdd}) =>  {
             fileURL:file.fileURL || '',
         };
         formRef.current.reset();
-        console.log(card);
+        setFile({fileName: null, fileURL: null});
         onAdd(card);
     };
 
@@ -49,7 +49,7 @@ const CardAddForm = ({FileInput,onAdd}) =>  {
             <input ref={emailRef} className={styles.input} type="text" name="email" placeholder="email"/>
             <textarea ref={messageRef} className={styles.textarea} name="message" placeholder="message"></textarea>
             <div className={styles.fileInput}>
-                <FileInput onFileChange={onFileChange}/>
+                <FileInput name={file.fileName} onFileChange={onFileChange}/>
             </div>
             <Button name='Add' onClick={onSubmit}/>
         </form>
