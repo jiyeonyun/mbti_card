@@ -6,50 +6,33 @@ import Header from '../header/header';
 import Preview from '../preview/preview';
 import styles from './maker.module.css';
 
-const Maker = ({FileInput,authService}) => {
+const Maker = ({FileInput,authService,cardRepository}) => {
+    const navigatorState = useNavigate().state;
+    
+    const [cards , setCards] = useState({});
+    const [userId, setUserId] = useState(navigatorState && navigatorState.id);
+
     const navigator = useNavigate();
     const onLogout = ()=>{
         authService.logout();
     };
-    const [cards , setCards] = useState({
-        '1':{
-            id: '1',
-            name: 'jiyeon',
-            company:'kakao',
-            title:'Software Egineer',
-            email: 'ellie@gmail.com',
-            message: '얼떨결에 성공한사람',
-            theme: 'dark',
-            fileName: 'ellie',
-            fileURL : null,
-        },
-        '2':{
-            id: '2',
-            name: 'jiyeon2',
-            company:'kakao',
-            title:'Software Egineer',
-            email: 'ellie@gmail.com',
-            message: '얼떨결에 성공한사람',
-            theme: 'light',
-            fileName: 'ellie',
-            fileURL : null,
-        },
-        '3':{
-            id: '3',
-            name: 'jiyeon3',
-            company:'kakao',
-            title:'Software Egineer',
-            email: 'ellie@gmail.com',
-            theme: 'colorful',
-            message: '얼떨결에 성공한사람',
-            fileName: 'ellie',
-            fileURL : null,
+    useEffect(()=>{
+        if(!userId){
+            return;
         }
-    });
+        const stopSync = cardRepository.syncCards(userId,cards =>{
+            setCards(cards);
+        })
+        return () => stopSync();
+    },[userId]);
 
     useEffect(()=>{
         authService.onAuthChange(user=>{
-            if(!user){
+            if(user){
+                setUserId(user.uid);
+                console.log(userId);
+            }
+            else{
                 navigator('/');
             }
         });
@@ -61,6 +44,7 @@ const Maker = ({FileInput,authService}) => {
             updated[card.id] = card;
             return updated;
         });
+        cardRepository.saveCard(userId, card);
     }
 
     const deleteCard = (card)=>{
@@ -69,6 +53,7 @@ const Maker = ({FileInput,authService}) => {
             delete updated[card.id];
             return updated;
         });
+        cardRepository.removeCard(userId, card);
     }
     
     return(
