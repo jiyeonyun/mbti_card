@@ -30,7 +30,6 @@ const Maker = ({FileInput,authService,cardRepository}) => {
         authService.onAuthChange(user=>{
             if(user){
                 setUserId(user.uid);
-                console.log(userId);
             }
             else{
                 navigator('/');
