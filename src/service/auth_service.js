@@ -1,4 +1,4 @@
-import {firebaseAuth, githubProvider, googleProvider, googleProviderr} from './firebase';
+import {firebaseAuth, githubProvider, googleProvider} from './firebase';
 
 
 class AuthService{
