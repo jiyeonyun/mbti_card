@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useCallback } from 'react/cjs/react.production.min';
+import { useCallback } from 'react/cjs/react.development';
 import Editor from '../editor/editor';
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -14,9 +14,9 @@ const Maker = ({FileInput,authService,cardRepository}) => {
     const [userId, setUserId] = useState(navigatorState && navigatorState.id);
 
     const navigator = useNavigate();
-    const onLogout = useCallback(()=>{
-            authService.logout();
-        },[authService]);
+    const onLogout = useCallback( ()=>{
+        authService.logout();
+    },[authService]);
     useEffect(()=>{
         if(!userId){
             return;
