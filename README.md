@@ -11,7 +11,8 @@
 <img src="https://img.shields.io/badge/FireBase-FFCA28?style=flat-square&logo=FireBase&logoColor=white"/>
 <br>
 <img width="1131" alt="스크린샷 2022-03-24 오후 2 29 18" src="https://user-images.githubusercontent.com/94913420/159849637-4d8a533a-033b-4033-af15-939f0a5fa0c6.png">
-<img width="1159" alt="스크린샷 2022-03-24 오후 2 29 34" src="https://user-images.githubusercontent.com/94913420/159849643-d12bad27-09ab-4120-855c-268df95c012b.png">
+<img width="1159" alt="스크린샷 2022-03-24 오후 2 29 34" src="https://user-images.githubusercontent.com/94913420/159849643-d12bad27-09ab-4120-855c-268df95c012b.png"><img width="1158" alt="image" src="https://user-images.githubusercontent.com/94913420/159851348-fccaf678-3ec4-4742-8f52-0cfb46ada799.png">
+
 <br>
 실행시 처음 나오는 화면 (깃허브와 구글을 이용하여 로그인 할 수 있다.)
 <br> <br>
@@ -24,6 +25,7 @@ firebase를 이용하여 로그인,실시간 수정과 데이터베이스를 사
 
 
 ## 상세 페이지
+
 ### 로그인
 <br><br><br>
 
@@ -45,17 +47,22 @@ mbti 인풋이 비어있는 상태로 추가를 누르면 알림창이 나오며
 삭제버튼을 누르면 카드가 제거됩니다.<br>
 파이어베이스르 사용해 데이터베이스를 사용하고 있기 때문에 여기서 수정 삭제 추가 된것은 파이어베이스에도 반영이됩니다.
 <br><br><br>
-### 타이머 설정, 플레이, 정지
+### 추가,삭제,테마설정
+<img width="1140" alt="스크린샷 2022-03-24 오후 2 30 32" src="https://user-images.githubusercontent.com/94913420/159850725-e94faee3-6948-42af-a46e-a26663732b72.png">
+<br><br>
+<img width="262" alt="스크린샷 2022-03-24 오후 2 49 13" src="https://user-images.githubusercontent.com/94913420/159851064-1293c90c-389c-4146-959f-40a37bff5465.png">
+<br><br>
+카드를 추가한 모습입니다. 설정한 테마에 따라 카드의 색상이 변합니다.
+<br><br><br>
+<img width="1158" alt="스크린샷 2022-03-24 오후 2 48 58" src="https://user-images.githubusercontent.com/94913420/159851077-f6260240-af36-4d24-a6d9-b2a141b74496.png">
+<br><br>
+추가하는폼, 보여지는 리스트 둘다 각각 스크롤이 됩니다.
+<br><br><br>
+<img width="292" alt="스크린샷 2022-03-24 오후 2 49 36" src="https://user-images.githubusercontent.com/94913420/159851062-a9062a61-cdcb-45b8-b9e8-24d67eddd96a.png">
+<br><br><br>
+본인이 원하는 이미지를 넣을수도 있습니다. <br>
+로딩스피너가 끝난후, 이미지의 파일이름이 버튼에 보여집니다.<br>
+<img width="1097" alt="스크린샷 2022-03-24 오후 2 49 44" src="https://user-images.githubusercontent.com/94913420/159851042-452b6e21-a71f-4597-8709-6a66080051c0.png">
+이미지 업로드한모습. <br>
+<br><br>
 
-<br><br><br>
-타이머의 플레이버튼을 누르면 설정된 타이머가 시작된다. 일시정지를 누르게되면 타이머가 멈춘다.<br>
-다시한번 누르면 정지되었던 타이머가 움직인다.
-<br><br><br>
-
-### 타이머 끝, 리셋
-
-<br><br><br>
-설정된 집중횟수를 다 채우게되면 finish라는 팝업이 나온다. 그리고 설정된 focus시간만큼 지난다면 그다음 타이머는<br>
-설정된 휴식시간으로 변경된다.<br>
-리셋버튼을 누르면 모든게 리셋되고, 다시 설정화면으로 초기화된다.
-<br><br><br>
