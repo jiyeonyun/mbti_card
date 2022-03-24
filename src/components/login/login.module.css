@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: center;
     background-color: makerWhite;
+    font-weight: bold;
+    border: 0.17em solid rgb(38, 38, 38);
+    border-radius: 2em;
+    overflow: hidden;
 }
 
 .list{
@@ -28,10 +32,11 @@
     border-radius: 1.2rem;
     background-color: transparent;
     cursor: pointer;
-    border: 0.2rem solid makerGreen;
+    border: 0.14rem solid makerBlack;
     outline: 0;
 }
 
 .button:hover{
-    background-color: makerLightPink;
+    background-color: #5b412f7c;
+    color: whitesmoke;
 }

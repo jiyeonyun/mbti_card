@@ -10,18 +10,23 @@
     max-width: 30rem;
 }
 
-.card.dark {
-    background-color: makerBlack;
-    color: makerWhite;
-}
-
-.card.light{
-    background-color: makerWhite;
+.card.purple {
+    background-color: #e7dfea;
     color: makerBlack;
 }
 
-.card.colorful{
-    background: makerColorful;
+.card.green{
+    background-color: #d6ece3;
+    color: makerBlack;
+}
+
+.card.blue{
+    background: #d9eaf0;
+    color: makerBlack;
+}
+.card.yellow{
+    background: #f9eed7;
+    color: makerBlack;
 }
 
 .avatar{
@@ -37,25 +42,33 @@
     width: 100%;
 }
 
-.name,.company, .title, .email , .message{
+.name, .title, .instargram , .memo{
     margin: 0;
     font-size: 0.8rem;
     margin-bottom: 0.2em;
+}
+
+.instargram{
+    font-weight: bold;
+    margin-bottom: 0.3em;
 }
 
 .name{
     font-size: 1.2rem;
 }
 
-.company{
+.mbti{
+    margin: 0;
     margin-bottom: 1em;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.company::after{
+.mbti::after{
     content: '';
     display: block;
     width: 90%;
     height: 2px;
-    background-color: makerWheat;
+    background-color: #fff;
     transform: translateY(0.5em);
 }

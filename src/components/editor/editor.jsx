@@ -5,7 +5,7 @@ import CardAddForm from '../card_add_form/card_add_form';
 
 const Editor = ({cards,addCard, updateCard ,deleteCard, FileInput}) => (
             <section className={styles.editor}>
-                <h1 className={styles.title}>Card Maker</h1>
+                <h1 className={styles.title}>MBTI NOTE</h1>
                 {Object.keys(cards).map(key => (
                     <CardEditForm key={key} FileInput={FileInput} card={cards[key]} updateCard={updateCard} deleteCard={deleteCard}></CardEditForm>
                 ))}

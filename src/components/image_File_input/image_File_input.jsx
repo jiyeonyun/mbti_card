@@ -24,7 +24,7 @@ const ImageFileInput = memo(
                 <input ref={inputRef} type='file' accept='image/*' name='file' onChange={onChange} className={styles.input}/>
                 {
                     !loading && <button className={`${styles.button} ${name ? styles.pink : styles.grey}`} onClick={onButtonClick}>
-                                    {name || 'NO FILE'}
+                                    {name || '사진 업로드'}
                                 </button>
                 }
                 {

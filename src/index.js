@@ -9,7 +9,7 @@ import ImageFileInput from './components/image_File_input/image_File_input';
 import CardRepository from './service/card_repository';
 import { memo } from 'react/cjs/react.production.min';
 
-const cardRepository = new CardRepository
+const cardRepository = new CardRepository();
 const authService = new AuthService();
 const imageUploader = new ImageUploader();
 const FileInput = memo(props => (<ImageFileInput {...props} imageUploader={imageUploader}/>));

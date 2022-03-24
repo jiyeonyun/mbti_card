@@ -2,14 +2,14 @@ import React, { useRef } from 'react';
 import styles from './card_edit_form.module.css';
 import Button from '../button/button';
 const CardEditForm = ({card, updateCard , deleteCard ,FileInput}) =>  {
-    const {name, company, title, email, message, theme, fileName} = card;
+    const {name, mbti, title, instargram, memo, theme, fileName} = card;
     const formRef = useRef();
     const nameRef = useRef();
-    const companyRef = useRef();
+    const mbtiRef = useRef();
     const themeRef = useRef();
     const titleRef = useRef();
-    const emailRef = useRef();
-    const messageRef = useRef();
+    const instargramRef = useRef();
+    const memoRef = useRef();
 
     const onChange = (event)=>{
         if(event.currentTarget == null){
@@ -36,15 +36,16 @@ const CardEditForm = ({card, updateCard , deleteCard ,FileInput}) =>  {
     return(
         <form className={styles.form}>
             <input ref={nameRef} className={styles.input} type="text" name="name" value={name} onChange={onChange}/>
-            <input ref={companyRef} className={styles.input} type="text" name="company" value={company} onChange={onChange}/>
+            <input ref={mbtiRef} className={styles.input} type="text" name="mbti" value={mbti} onChange={onChange} />
             <select ref={themeRef} className={styles.select} name="theme" value={theme} onChange={onChange}>
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-                <option value="colorful">Colorful</option>
+                <option value="yellow">yellow</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="purple">purple</option>
             </select>
             <input ref={titleRef} className={styles.input} type="text" name="title" value={title} onChange={onChange}/>
-            <input ref={emailRef}className={styles.input} type="text" name="email" value={email} onChange={onChange}/>
-            <textarea ref={messageRef}className={styles.textarea} name="message" value={message} onChange={onChange}></textarea>
+            <input ref={instargramRef}className={styles.input} type="text" name="instargram" value={instargram} onChange={onChange}/>
+            <textarea ref={memoRef}className={styles.textarea} name="memo" value={memo} onChange={onChange}></textarea>
             <div className={styles.fileInput}>
                 <FileInput name={fileName} onFileChange={onFileChange}/>
                 </div>

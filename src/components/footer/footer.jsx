@@ -4,7 +4,7 @@ import styles from './footer.module.css';
 const Footer = memo(
     () => (
         <footer className={styles.footer}>
-            <p className={styles.title}>Code your Dream</p>
+            <p className={styles.title}>MBTI 척척박사 연구소</p>
         </footer>
 ));
 

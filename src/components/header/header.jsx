@@ -7,7 +7,7 @@ const Header = memo(
         <header className={styles.header}>
             {onLogout && (<button className={styles.logout} onClick={onLogout}>Logout</button>)}
             <img src="/images/logo.png" alt="" className={styles.logo} />
-            <h1 className={styles.title}>Bussiness Card Maker</h1>
+            <h1 className={styles.title}>Remember Your Friends MBTI</h1>
         </header>
     ));
 

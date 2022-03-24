@@ -4,12 +4,12 @@
     width: 100%;
     text-align: center;
     padding: 0.5em;
-    background-color: makerGreen;
+    background-color: #6a8e23a5;
     position: relative;
 }
 
 .logo{
-    width: 3em;
+    width: 6em;
 }
 
 .title{
@@ -22,10 +22,11 @@
     top: 1em;
     right: 3em;
     padding: 0.8em;
-    border-radius: 20%;
-    background-color: makerBlack;
-    color: makerWhite;
+    border-radius: 1em;
+    background-color: #fefff5;
+    color: makerBlack;
     outline: 0;
     border: 0;
     cursor: pointer;
+    font-weight: bold;
 }
