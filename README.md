@@ -1,7 +1,7 @@
 ***
 
 ## MBTI CARD 📝
-* <https://jiyeonyun.github.io/habitTracker_renewal/>
+* <https://jiyeonyun.github.io/mbti_card/>
 <br>↑ 배포사이트
 <br>
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
