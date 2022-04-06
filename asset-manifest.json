@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mbti_card/static/css/main.87dcf60b.css",
-    "main.js": "/mbti_card/static/js/main.37158536.js",
+    "main.js": "/mbti_card/static/js/main.4e844529.js",
     "static/js/787.5639fac3.chunk.js": "/mbti_card/static/js/787.5639fac3.chunk.js",
     "index.html": "/mbti_card/index.html",
     "main.87dcf60b.css.map": "/mbti_card/static/css/main.87dcf60b.css.map",
-    "main.37158536.js.map": "/mbti_card/static/js/main.37158536.js.map",
+    "main.4e844529.js.map": "/mbti_card/static/js/main.4e844529.js.map",
     "787.5639fac3.chunk.js.map": "/mbti_card/static/js/787.5639fac3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87dcf60b.css",
-    "static/js/main.37158536.js"
+    "static/js/main.4e844529.js"
   ]
 }
